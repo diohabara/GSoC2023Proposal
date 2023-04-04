@@ -5,7 +5,3 @@
 ```sh
 make
 ```
-
-## HackMD
-
-- [BPF Bankend](https://hackmd.io/ZaUG27RLT8GtfDsapI8c7w?both#fn15)
