@@ -1,10 +1,11 @@
 # Proposal for Google Summer of Code 2023
 
-- [Draft](draft.md)
-
 ## How to build
 
 ```sh
-nix-shell -p pandoc --run 'pandoc draft.md -o proposal.pdf'
+make
 ```
 
+## HackMD
+
+- [BPF Bankend](https://hackmd.io/ZaUG27RLT8GtfDsapI8c7w?both#fn15)
