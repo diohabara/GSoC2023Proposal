@@ -10,6 +10,7 @@ discourse: "https://discourse.llvm.org/t/clangir-build-and-run-singlesource-benc
 
 - **Project size: medium**
 - **Difficulty: Simple**
+- **Confirmed Mentors: @hnrklssn**
 
 The LLVM regression tests are executed by Lit[^llvm-testing], which is structured as source code or IR to be passed to some binary, rather than test code directly calling the code to be tested. This has many advantages but can make it difficult to predict which code path is executed when the compiler is invoked with a certain test input, especially for edge cases where error handling is involved. The goal of this project is to help developers create good test coverage for their patch and enable reviewers to verify that they have done so. To accomplish this, a tool can be fed a patch as input, add coverage instrumentation for the affected source files, runs Lit tests, and records which test cases cause each counter to be executed. For each counter, we can then report the number of test cases executing the counter, but perhaps more importantly we can also report the number of test cases executing the counter that are also changed in some way by the patch, since a modified line that results in the same test results isn’t properly tested unless it’s intended to be a non-functional change.
 
